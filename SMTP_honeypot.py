@@ -9,7 +9,7 @@ logging_format = logging.Formatter('%(asctime)s %(message)s')
 # Set up HTTP logger to log malicious activity
 funnel_logger = logging.getLogger('funnellogger')
 funnel_logger.setLevel(logging.INFO)
-funnel_handler = RotatingFileHandler('smtp_honeypot.log', maxBytes=2000, backupCount=5)
+funnel_handler = RotatingFileHandler('log files/smtp_honeypot.log', maxBytes=2000, backupCount=5)
 funnel_handler.setFormatter(logging_format)
 funnel_logger.addHandler(funnel_handler)
 
