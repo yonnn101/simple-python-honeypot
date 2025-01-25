@@ -17,7 +17,7 @@ logging_format = logging.Formatter('%(asctime)s %(message)s')
 # http logger
 funnel_logger = logging.getLogger('funnellogger')
 funnel_logger.setLevel(logging.INFO)
-funnel_handler = RotatingFileHandler('http_audits.log', maxBytes=2000, backupCount=5)
+funnel_handler = RotatingFileHandler('log files/http_audits.log', maxBytes=2000, backupCount=5)
 funnel_handler.setFormatter(logging_format)
 funnel_logger.addHandler(funnel_handler)
 
