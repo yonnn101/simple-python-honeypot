@@ -19,8 +19,8 @@ def setup_logger(name, log_file, level=logging.INFO, max_bytes=5000, backup_coun
     logger.addHandler(handler)
     return logger
 
-funnel_logger = setup_logger('funnellogger', 'audits.log')
-creds_logger = setup_logger('credslogger', 'command_audits.log')
+funnel_logger = setup_logger('funnellogger', 'log files/audits.log')
+creds_logger = setup_logger('credslogger', 'log files/command_audits.log')
 
 # Server Interface
 class Server(paramiko.ServerInterface):
