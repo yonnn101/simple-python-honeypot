@@ -1,4 +1,4 @@
-# simple-python-honeypot
+# PyGuard: A Simple Python Honeypot
 
 ---
 
